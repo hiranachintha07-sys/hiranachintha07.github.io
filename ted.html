@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted (2024) - Ted</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .character-detail-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+        .char-header {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        .char-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+        .char-info h1 {
+            color: var(--primary);
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .char-info h2 {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+        .char-bio {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        .actor-section {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary);
+        }
+        .actor-section h3 {
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .char-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .char-img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Ted Series</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="characters.html" class="active">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="world.html">World & Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="page-content container">
+        <a href="characters.html" style="display:inline-block; margin-bottom: 2rem; color: var(--primary); font-weight: bold;">&larr; Back to Characters</a>
+        <div class="character-detail-container">
+            <div class="char-header">
+                <img src="images/ted 2.jpg" alt="Seth MacFarlane" class="char-img" style="object-fit: cover;">
+                <div class="char-info">
+                    <h1>Seth MacFarlane</h1>
+                    <h2>Voice of Ted / Creator</h2>
+                </div>
+            </div>
+            <div class="char-bio">
+                <p>Seth MacFarlane is the creator of the series and the original Ted movies. He returns to provide the iconic voice and motion capture performance for Ted. Known for his work on Family Guy and The Orville, MacFarlane infuses Ted with his signature rapid-fire comedic timing and irreverent humor.</p>
+                <div class="actor-stats">
+                    <div class="stat-card">
+                        <div class="stat-label">Age</div>
+                        <div class="stat-value">50</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Hometown</div>
+                        <div class="stat-value">Kent, Connecticut, USA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Known For</div>
+                        <div class="stat-value">Family Guy, American Dad!, The Orville</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container"><p>&copy; 2024 Ted Series Fan Site. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>

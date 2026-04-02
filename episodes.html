@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted (2024) - Episodes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Episodes Specific Styles */
+        .seasons-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .season-section {
+            margin-bottom: 4rem;
+        }
+
+        .season-title {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md) var(--radius-md) 0 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .season-title span {
+            font-size: 1rem;
+            font-weight: 600;
+            background: rgba(0,0,0,0.2);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+        }
+
+        .episode-list {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-radius: 0 0 var(--radius-md) var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .episode-item {
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .episode-item:last-child {
+            border-bottom: none;
+        }
+
+        .episode-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .episode-header:hover {
+            background: var(--bg-color);
+            padding-left: 2.5rem;
+        }
+
+        .ep-number {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            width: 50px;
+            flex-shrink: 0;
+        }
+
+        .ep-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .ep-toggle-icon {
+            margin-left: auto;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .episode-item.active .ep-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .episode-desc {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 2rem;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+            opacity: 0;
+            margin: 0;
+        }
+
+        .episode-item.active .episode-desc {
+            max-height: 150px;
+            padding-bottom: 1.5rem;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Ted Series</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="episodes.html" class="active">Episodes</a></li>
+                <li><a href="world.html">World & Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content container">
+        
+        <div class="section-header">
+            <h2>Seasons and Episodes</h2>
+        </div>
+
+        <div class="seasons-container">
+            
+            <!-- Season 1 -->
+            <section class="season-section">
+                <h3 class="season-title">
+                    Season 1
+                    <span>7 Episodes</span>
+                </h3>
+                <div class="episode-list">
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">1</span>
+                            <p class="ep-title">Just Say Yes</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">John struggles with school dynamics and asks Ted for terrible advice to survive the realities of high school life.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">2</span>
+                            <p class="ep-title">My Two Dads</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">Ted decides to step in as a surrogate father figure for John, much to Matty's immense frustration.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">3</span>
+                            <p class="ep-title">Ejectile Dysfunction</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">A hilarious misadventure involving an old VHS tape and a desperate attempt to cover up a mistake before Susan finds out.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">4</span>
+                            <p class="ep-title">Subways, Bicycles and Automobiles</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">Ted and John attempt to navigate Boston's public transit system with disastrous and comedic results.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">5</span>
+                            <p class="ep-title">Desperately Seeking Susan</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">Susan desperately tries to inject culture into the household, but Ted completely derails her plans.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">6</span>
+                            <p class="ep-title">Loud Night</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">The Bennett family attempts to have a quiet evening, but a neighborhood dispute spirals out of control.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">7</span>
+                            <p class="ep-title">He's Gotta Have It</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">John develops a crush, and Ted's wingman tactics prove to be incredibly problematic.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Season 2 -->
+            <section class="season-section">
+                <h3 class="season-title">
+                    Season 2
+                    <span>8 Episodes</span>
+                </h3>
+                <div class="episode-list">
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">1</span>
+                            <p class="ep-title">Talk Dirty to Me</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">John and Ted use a phone in the school basement to call a phone‑sex hotline, which ends up costing the school thousands of dollars and brings in a strict school investigator to find out who did it.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">2</span>
+                            <p class="ep-title">Mrs. Robicheck</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">Ted begins a risky affair with a married woman and gets emotionally involved, while Matty and Susan try to figure out what’s causing Matty’s strange health issues.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">3</span>
+                            <p class="ep-title">Dungeons & Dealers</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">A shortage of weed leads John, Ted, and Blaire into a drug dealer’s Dungeons & Dragons‑like adventure in hopes of earning product, with Matty and Susan joining unaware of the real prize.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">4</span>
+                            <p class="ep-title">The Mom’s Bombed Rom‑Com</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">Blaire’s rom‑com marathon frustrates Matty at home, and Ted lies to John about his romantic exploits, leading to an unusual double date with their elderly neighbor.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">5</span>
+                            <p class="ep-title">The Sword in the Stoned</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">Worried about college applications, John and Ted audition for the school play, and meanwhile Matty and Susan take on part‑time jobs at Dunkin’ Donuts.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">6</span>
+                            <p class="ep-title">Roe v. Weed</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">After a casual hookup, Blaire unexpectedly finds herself dealing with a pregnancy situation, causing tension and clashing opinions within the family.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">7</span>
+                            <p class="ep-title">Susan Is the New Black</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">A police officer discovers John and Ted’s weed during a traffic stop; to protect them, Susan takes the blame and experiences what life is like from the inside of jail.</div>
+                    </div>
+                    <div class="episode-item">
+                        <div class="episode-header" onclick="toggleEpisode(this)">
+                            <span class="ep-number">8</span>
+                            <p class="ep-title">Fraudcast News</p>
+                            <span class="ep-toggle-icon">▼</span>
+                        </div>
+                        <div class="episode-desc">After a health scare forces Matty to stay calm, the family tries to keep him uninformed about a major media event (the O.J. Simpson verdict), going to extreme lengths to protect him.</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ted Series Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleEpisode(element) {
+            const item = element.parentElement;
+            
+            // Optional: Close other open episodes
+            /*
+            document.querySelectorAll('.episode-item').forEach(el => {
+                if (el !== item) el.classList.remove('active');
+            });
+            */
+            
+            item.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

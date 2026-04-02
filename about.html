@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted (2024) - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* About Specific Styles */
+        .about-intro {
+            max-width: 900px;
+            margin: 0 auto 4rem auto;
+            text-align: center;
+        }
+
+        .about-intro p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .two-column-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .details-col h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .details-col p {
+            margin-bottom: 2rem;
+        }
+
+        .about-img-placeholder {
+            width: 100%;
+            height: 450px;
+        }
+
+        .facts-list {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .facts-list h3 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .facts-list ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 0;
+        }
+
+        .facts-list li {
+            background: var(--bg-color);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 0.5rem;
+        }
+
+        .facts-list li span:first-child {
+            color: var(--text-muted);
+            font-weight: 400;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .two-column-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .about-img-placeholder {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Ted Series</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="world.html">World & Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content container">
+        
+        <div class="section-header">
+            <h2>About the Series</h2>
+        </div>
+
+        <!-- Detailed Paragraph -->
+        <section class="about-intro">
+            <p>
+                Set in 1993, <strong>Ted</strong> serves as a hilarious and heartfelt prequel to the immensely popular Ted movie franchise. Long before John Bennett grew up, he was a 16-year-old high school student residing in Framingham, Massachusetts, trying to find his place in the world. But his life is anything but ordinary, as his magical, foul-mouthed teddy bear, Ted, lives under the same roof. The series perfectly blends coming-of-age sincerity with outrageous, edgy comedy, exploring the inseparable yet chaotic bond between a teenager and his living stuffed toy as they navigate family dynamics, high school drama, and the absurdities of the 1990s.
+            </p>
+            <p class="mt-2">
+                As John attempts to survive the unforgiving environment of his high school, he leans heavily on Ted. Whether it's scheming to buy a Nintendo game, dealing with the wrath of the local bullies, or surviving the strict environment enforced by John's gruff father Matty, the duo finds themselves in consistently outrageous situations. Ted, despite his penchant for swearing, smoking, and inappropriate humor, demonstrates a surprisingly profound loyalty to John, emphasizing that true friendship can come from the most unlikely (and stuffed) places. The presence of John's sweet-natured mother Susan and his progressive cousin Blair adds even more dynamic layers to the chaotic but lovable Bennett household.
+            </p>
+        </section>
+
+        <!-- Two Column Layout -->
+        <section class="two-column-layout">
+            <div class="details-col">
+                <h3>Themes of the Show</h3>
+                <p>
+                    While known for its wild humor, the show deeply explores the meaning of loyalty, friendship, and the awkward journey of growing up. Beneath the furry exterior, Ted often acts as John's anchor in a household full of quirky family members, showing that family comes in all shapes, sizes, and synthetic materials.
+                </p>
+
+                <h3>Setting the Scene</h3>
+                <p>
+                    Immersed in nostalgic 1990s suburban life, the environment feels deeply authentic. From bulky CRT TVs to the distinct fashion and cultural phenomena of the era, the show uses its time period to emphasize how different the world was, yet how universally relatable teenage struggles remain.
+                </p>
+            </div>
+            
+                <img src="images/house.jpg" alt="Bennett Household" class="about-img-placeholder" style="object-fit: cover; border-radius: var(--radius-lg); width: 100%;">
+        </section>
+
+        <!-- Production Section -->
+        <section class="production-section">
+            <div class="section-header">
+                <h2>Behind the Scenes</h2>
+            </div>
+            <div class="production-grid">
+                <article class="prod-card">
+                    <h3>Bringing Ted to Life</h3>
+                    <p>Creating a photorealistic, interacting teddy bear in a 1993 setting involves a massive technical effort. Unlike traditional sitcoms, Seth MacFarlane records the dialogue live with the actors while performing motion capture, allowing for authentic, improvised comedic timing. The VFX team then seamlessly superimposes the CGI bear into the footage, matching lighting and actor eye-lines perfectly.</p>
+                </article>
+                <article class="prod-card">
+                    <h3>The Creator's Vision</h3>
+                    <p>Seth MacFarlane envisioned the prequel series as an opportunity to explore John's formative years. The 1990s setting was explicitly chosen not just for nostalgia, but because it predates the overwhelming presence of smartphones and the internet. This allows the humor to focus entirely on family dynamics, bizarre face-to-face social interactions, and purely character-driven comedy.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Series Overview Section -->
+        <section class="production-section mt-4">
+            <div class="section-header">
+                <h2>Series Overview</h2>
+            </div>
+            <div class="production-grid">
+                <article class="prod-card">
+                    <h3>Production Details</h3>
+                    <p>Created by Seth MacFarlane, the comedy series premiered in 2024 and streams exclusively on Peacock. Set in the United States during the culturally distinct 1990s, the show brings a fresh perspective to the beloved franchise while maintaining its signature edgy humor.</p>
+                </article>
+                <article class="prod-card">
+                    <h3>Cast & Episodes</h3>
+                    <p>The series features a stellar main cast including Seth MacFarlane, Max Burkholder, Alanna Ubach, Scott Grimes, and Giorgia Whigham. Across its 2 seasons and 15 episodes, the talented ensemble consistently delivers laugh-out-loud moments and surprising emotional depth.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ted Series Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

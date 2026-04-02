@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted (2024) - World & Setting</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* World & Setting Specific Styles */
+        .world-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.15rem;
+        }
+
+        .world-sections {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .world-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .world-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+
+        .world-card h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .time-period-layout {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .time-period-text {
+            flex: 1;
+        }
+
+        .small-placeholder {
+            width: 250px;
+            height: 180px;
+            flex-shrink: 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .time-period-layout {
+                flex-direction: column;
+            }
+            .small-placeholder {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Ted Series</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="world.html" class="active">World & Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content container">
+        
+        <div class="section-header">
+            <h2>World & Setting</h2>
+        </div>
+
+        <section class="world-intro mt-4 mb-2">
+            <p>The series is set primarily in the familiar Bennett household in Massachusetts during the mid-1990s. The world balances nostalgic elements like Blockbuster video runs and classic 90s television with the wildly absurd reality of a foul-mouthed teddy bear seamlessly integrated into normal society.</p>
+        </section>
+
+        <div class="world-sections">
+            
+            <!-- Section 1 -->
+            <section class="world-card id-time-period">
+                <h3>Time Period – The 1990s</h3>
+                <div class="time-period-layout">
+                    <div class="time-period-text">
+                        <p>
+                            Set in 1993, the environment breathes 90s culture. It’s an era devoid of smartphones and social media, highlighting Blockbuster trips, bulky VHS tapes, landline phones with twisted cords, and distinctive pop culture references. This vibrant, colorful decade provides a grounded backdrop that directly contrasts with the absurdity of Ted’s existence.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="world-card id-bennett-household">
+                <h3>The Bennett Household</h3>
+                <p>
+                    The physical and emotional anchor of the series is the Bennett family home. It’s a typical middle-class suburban house—slightly cluttered, undeniably loud, and deeply lived-in. Daily life here consists of family dinners that invariably devolve into arguments, battles over the TV remote, and Ted casually chilling on the sofa as if he’s just another family member. It’s an environment of structured chaos where everyone tries to maintain normalcy.
+                </p>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="world-card id-school-life">
+                <h3>School Life</h3>
+                <p>
+                    John’s high school is the classic 90s educational battleground. Filled with cliques, terrifying bullies, awkward crushes, and indifferent teachers, the halls represent the biggest struggle for a normal teen. John's desperation to fit in and survive high school is routinely derailed by Ted, who often provides hilariously misguided advice or causes direct disruptions to John's academic and social life.
+                </p>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="world-card id-unique-concept">
+                <h3>Unique Concept</h3>
+                <p>
+                    The most brilliant aspect of the world is how unremarkable Ted’s existence has become to the general public. While he was a massive celebrity phenomenon years ago, by 1993, the novelty has completely worn off. A walking, talking teddy bear exists, yet people are more annoyed by his bad attitude than amazed by his magical nature. This normalization allows the series to explore grounded, humorous storylines without constantly addressing the impossibility of a living stuffed animal.
+                </p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ted Series Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

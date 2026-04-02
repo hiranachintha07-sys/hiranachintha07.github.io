@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted (2024) - Characters</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Characters Specific Styles */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .character-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .character-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .card-img-placeholder {
+            height: 250px;
+            border-bottom: 1px solid var(--border-color);
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border: none; /* override default img-placeholder border */
+        }
+
+        .character-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .character-content h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .character-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Ted Series</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="characters.html" class="active">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="world.html">World & Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content container">
+        
+        <div class="section-header">
+            <h2>Main Characters</h2>
+        </div>
+
+        <!-- Grid Layout for Characters -->
+        <section class="character-grid">
+            
+            <!-- Ted -->
+            <a href="ted.html" class="character-card">
+                <img src="images/ted 1.jpg" alt="Ted" class="card-img-placeholder" style="object-fit: cover; width: 100%;">
+                <div class="character-content">
+                    <h3>Ted</h3>
+                    <p>A magically alive, bold, and rebellious teddy bear who refuses to play by the rules. Despite his unpredictable, often inappropriate behavior, Ted possesses a surprisingly strong loyalty toward John and always has his back when things get chaotic.</p>
+                </div>
+            </a>
+
+            <!-- John Bennett -->
+            <a href="john.html" class="character-card">
+                <img src="images/john 1.jpg" alt="John Bennett" class="card-img-placeholder" style="object-fit: cover; width: 100%;">
+                <div class="character-content">
+                    <h3>John Bennett</h3>
+                    <p>An ordinary sixteen-year-old teenager navigating the terrifying waters of high school. Constantly dealing with school pressures, quirky family dynamics, and the unique, wildly overwhelming experience of having a talking stuffed animal as a best friend.</p>
+                </div>
+            </a>
+
+            <!-- Matty Bennett -->
+            <a href="matty.html" class="character-card">
+                <img src="images/matty 1.jpg?v=2" alt="Matty Bennett" class="card-img-placeholder" style="object-fit: cover; width: 100%;">
+                <div class="character-content">
+                    <h3>Matty Bennett</h3>
+                    <p>John's father, a gruff, strict, and highly opinionated patriarch of the Bennett household. A proud Bostonian who frequently struggles with Ted's disruptive presence, trying fruitlessly to instill discipline in a highly unconventional home environment.</p>
+                </div>
+            </a>
+
+            <!-- Susan Bennett -->
+            <a href="susan.html" class="character-card">
+                <img src="images/susan 1.jpg?v=2" alt="Susan Bennett" class="card-img-placeholder" style="object-fit: cover; width: 100%;">
+                <div class="character-content">
+                    <h3>Susan Bennett</h3>
+                    <p>John's relentlessly supportive, sweet-natured mother. She constantly strives to maintain harmony and a sense of balance in their increasingly crazy household, finding ways to see the good in Ted even when he tests her considerable patience.</p>
+                </div>
+            </a>
+
+            <!-- Blair -->
+            <a href="blair.html" class="character-card">
+                <img src="images/blair 1.jpg?v=2" alt="Blair" class="card-img-placeholder" style="object-fit: cover; width: 100%;">
+                <div class="character-content">
+                    <h3>Blair</h3>
+                    <p>John's cousin and a college student living with the Bennett family. She holds deeply progressive views that constantly clash with Matty's traditional, old-school Boston mentality, providing an intellectual counterbalance to the household's chaotic energy.</p>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ted Series Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

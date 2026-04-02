@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted (2024) - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            position: relative;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .hero-placeholder {
+            width: 100%;
+            height: 500px;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 90%;
+            pointer-events: none; /* Let clicks pass through to placeholder if needed */
+        }
+
+        .hero h1 {
+            color: #1A202C; /* Assuming a light placeholder, dark text */
+            font-size: 5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 10px rgba(255,255,255,0.8);
+            letter-spacing: -2px;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: #2D3748;
+            font-weight: 600;
+            text-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+            background: rgba(255, 255, 255, 0.4);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            display: inline-block;
+            backdrop-filter: blur(4px);
+            margin-bottom: 0;
+        }
+
+        .intro-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .intro-section p {
+            font-size: 1.25rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .home-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .home-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .card-icon-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #FEEBC8;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .home-card h3 {
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .home-card p {
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .hero .tagline { font-size: 1.1rem; }
+            .hero-placeholder { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Ted Series</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="world.html">World & Setting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/header.jpg" alt="Ted Series Header" class="hero-placeholder" style="object-fit: cover;">
+            <div class="hero-content">
+                <h1>Ted</h1>
+                <p class="tagline">A talking teddy bear. A teenage life. Absolute chaos.</p>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section class="intro-section">
+            <p>Welcome to 1993, where John Bennett is an awkward high school student navigating the turbulence of adolescence alongside his magically alive, foul-mouthed best friend—Ted the teddy bear. It's a hilarious coming-of-age story filled with 90s nostalgia, family drama, and wildly inappropriate advice.</p>
+        </section>
+
+        <!-- Cards Row -->
+        <section class="cards-grid">
+            <a href="about.html" class="home-card">
+                <div class="card-icon-placeholder">#1</div>
+                <h3>Main Character</h3>
+                <p>Ted</p>
+            </a>
+
+            <a href="about.html" class="home-card">
+                <div class="card-icon-placeholder">📍</div>
+                <h3>Setting</h3>
+                <p>1990s suburban life</p>
+            </a>
+
+            <a href="about.html" class="home-card">
+                <div class="card-icon-placeholder">🎭</div>
+                <h3>Genre</h3>
+                <p>Comedy</p>
+            </a>
+        </section>
+
+        <!-- Reviews / Quotes -->
+        <section class="reviews-section">
+            <div class="section-header">
+                <h2>What the Critics Are Saying</h2>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    "A masterclass in balancing foul-mouthed 90s nostalgia with genuine, laugh-out-loud heart. Seth MacFarlane proves Ted works just as magically on TV."
+                    <span class="review-author">— Entertainment Reviewer</span>
+                </div>
+                <div class="review-card">
+                    "Uproariously funny. The dynamic between Max Burkholder and the CGI bear is flawless, delivering some of the sharpest comedy of the year."
+                    <span class="review-author">— The Daily Stream</span>
+                </div>
+                <div class="review-card">
+                    "It has no right being this emotionally resonant while making jokes you definitely shouldn't repeat in public. A perfect binge-watch."
+                    <span class="review-author">— Pop Culture Weekly</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="cta-content">
+                <h2>Ready for the Chaos?</h2>
+                <p>Relive the magic, the mayhem, and the incredibly questionable choices. Stream Seasons 1 and 2 now on Peacock.</p>
+                <a href="https://www.peacocktv.com" target="_blank" rel="noopener noreferrer" class="cta-button">Watch Now</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ted Series Fan Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
